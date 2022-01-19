@@ -73,3 +73,8 @@ Route::group(['prefix' => 'pendaftaran'], function(){
     route::get('pending', 'Pendaftaran\PendingController@index')->name('pendaftaran.pending');
     route::get('verified', 'Pendaftaran\VerifiedController@index')->name('pendaftaran.verified');
 });
+
+Route::group(['prefix' => 'cetak'], function(){
+    route::get('activity', 'Report\ActivityController@index')->name('cetak.activity');
+    route::get('data-activity', 'Report\ActivityController@edit')->name('cetak.semua-data.activity');
+});

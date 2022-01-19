@@ -12,7 +12,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="mb-3">
-                            <a href="{{route('tambah-data.siswa')}}" class="btn btn-secondary">Tambah Siswa</a>
+                            <a href="{{route('tambah-data.siswa')}}" class="btn btn-primary">Tambah Siswa</a>
                         </div>
                         <form action="" method="post">
                             <div class="row">
@@ -56,7 +56,7 @@
                                             <form action="{{route('destroy.data.siswa', $student->id)}}" method="post">
                                                 @csrf
                                                 @method('DELETE')
-                                                <a href="{{route('edit-data.siswa', $student->id)}}" class="btn btn-secondary btn-sm">Edit</a>
+                                                <a href="{{route('edit-data.siswa', $student->id)}}" class="btn btn-warning btn-sm">Edit</a>
                                                 <button type="submit" class=" btn btn-danger btn-sm">Hapus</button>
                                             </form>
                                         </td>
