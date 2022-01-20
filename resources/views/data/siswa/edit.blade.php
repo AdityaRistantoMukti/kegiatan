@@ -28,14 +28,14 @@
                              <div class="col-md-3">
                                  <div class="form-group">
                                      <label for="">Nama</label>
-                                     <input type="text" class="form-control" id="" value="{{$user->name}}">
+                                     <input type="text" class="form-control" name="name" id="" value="{{$user->name}}">
                                  </div>
                              </div>
                                  <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="">Jenis Kelamin</label>
                                         <select name="gender" id="" class="form-control">
-                                            <option value="">Silahkan Pilih Jenis Kelamin</option>
+                                            <option value="{{$user->students->first()->gender}}">{{$user->students->first()->gender}}</option>
                                             <option value="Laki-Laki">Laki-Laki</option>
                                             <option value="Perempuan">Perempuan</option>
                                         </select>
@@ -45,7 +45,7 @@
                                  <div class="form-group">
                                      <label for="">Agama</label>
                                      <select name="religion" id="" class="form-control">
-                                         <option value="">Silahkan Pilih Agama</option>
+                                         <option value="{{$user->students->first()->religion}}">{{$user->students->first()->religion}}</option>
                                          <option value="Islam">Islam</option>
                                          <option value="Kristen">Kristen</option>
                                          <option value="Budha">Budha</option>
@@ -57,7 +57,7 @@
                                     <div class="form-group">
                                         <label for="">Jurusan</label>
                                         <select name="major" id="" class="form-control">
-                                            <option value="">Silahkan Pilih Jurusan</option>
+                                            <option value="{{$user->students->first()->major}}">{{$user->students->first()->major}}</option>
                                             <option value="AK">AK</option>
                                             <option value="AP">AP</option>
                                             <option value="RPL">RPL</option>
@@ -70,7 +70,7 @@
                                     <div class="form-group">
                                         <label for="">Kelas</label>
                                         <select name="class" id="" class="form-control">
-                                            <option value="">Silahkan Pilih Kelas</option>
+                                            <option value="{{$user->students->first()->class}}">{{$user->students->first()->class}}</option>
                                             <option value="X">X</option>
                                             <option value="XI">XI</option>
                                             <option value="XII">XII</option>
@@ -87,7 +87,7 @@
                                     <div class="form-group">
                                         <label for="">Status</label>
                                         <select name="status" id="" class="form-control">
-                                            <option value="">Silahkan Pilih Status</option>
+                                            <option value="{{$user->students->first()->status}}">{{$user->students->first()->status}}</option>
                                             <option value="Aktif">Aktif</option>
                                             <option value="Non-Aktif">Non-Aktif</option>
                                         </select>

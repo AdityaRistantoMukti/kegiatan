@@ -44,12 +44,12 @@ class DataSiswaController extends Controller
             if ($user->save()) {
                 $siswa = Student::create([
                     'user_id' =>  $user->id,
-                    'nisn'  =>  $request->nisn,
+                    'nisn'    =>  $request->nisn,
                     'gender'  =>  $request->gender,
-                    'religion'  =>  $request->religion,
-                    'major'  =>  $request->major,
-                    'class'  =>  $request->class,
-                    'phone'  =>  $request->phone,
+                    'religion'=>  $request->religion,
+                    'major'   =>  $request->major,
+                    'class'   =>  $request->class,
+                    'phone'   =>  $request->phone,
                     'status'  =>  $request->status,
                 ]);
             }
