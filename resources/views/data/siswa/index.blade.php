@@ -7,7 +7,7 @@
                 <div class="card border-0">
                     <div class="card-body">
                         <div class="mb-3">
-                            <a href="{{route('tambah-data.siswa')}}" class="btn btn-primary">Tambah Siswa</a>
+                            <a href="{{route('tambah-data.siswa')}}" class="btn btn-success">Tambah Siswa</a>
                         </div>
                         <form action="" method="post">
                             <div class="row">
@@ -22,7 +22,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <button class="btn btn-secondary" type="submit">Cari Data</button>
+                                    <button class="btn btn-primary" type="submit">Cari Data</button>
                                 </div>
                             </div>
                         </form>
@@ -59,7 +59,7 @@
                                                 <form action="{{route('destroy.data.siswa', $student->id)}}" method="post">
                                                     @csrf
                                                     @method('DELETE')
-                                                    <a href="{{route('edit-data.siswa', $student->id)}}" class="btn btn-warning btn-sm">Edit</a>
+                                                    <a href="{{route('edit-data.siswa', $student->id)}}" class="btn btn-primary btn-sm">Edit</a>
                                                     <button type="submit" class=" btn btn-danger btn-sm">Hapus</button>
                                                 </form>
                                             </td>

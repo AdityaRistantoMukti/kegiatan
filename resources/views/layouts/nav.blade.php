@@ -13,9 +13,11 @@
                 {{-- <li class="nav-item">
                     <a href="{{url('/')}}" class="nav-link">Welcome Page</a>
                 </li> --}}
+                @auth
                 <li class="nav-item hover">
                     <a href="{{route('dashboard.index')}}" class="nav-link text-white">DASHBOARD</a>
-                </li>
+                </li>  
+                @endauth
                 @role('admin')
                 <li class="nav-item hover">
                     <a href="{{route('data.siswa')}}" class="nav-link text-white">DATA SISWA</a>

@@ -24,7 +24,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <button class="btn btn-success" type="submit">Cari Data</button>
+                                    <button class="btn btn-primary" type="submit">Cari Data</button>
                                 </div>
                             </div>
                         </form>
@@ -61,7 +61,7 @@
                                                 <form action="{{route('destroy.data.activity', $activity->id) }}" method="post">
                                                     @csrf
                                                     @method('DELETE')
-                                                <a href="{{route('manage-kegiatan.add-form.edit-kegiatan', $activity->id)}}" class="btn btn-secondary btn-sm">Edit</a>
+                                                <a href="{{route('manage-kegiatan.add-form.edit-kegiatan', $activity->id)}}" class="btn btn-primary btn-sm">Edit</a>
                                                 <button type="submit" class=" btn btn-danger btn-sm">Hapus</button>
                                             </form>
                                                

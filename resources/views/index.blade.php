@@ -44,9 +44,7 @@
                         </div>
                     </div>
                     <div>
-                        <a href="{{route('kegiatan.create', $activity->id)}}" class="btn btn-outline-info">
-                            Read more
-                          </a>
+                        <a href="{{route('kegiatan.create', $activity->id)}}" class="btn btn-outline-info">Read more</a>
                     </div>
                 </div>
             </div>
@@ -55,4 +53,5 @@
         @endforeach
     </div>
 </div>
+
 @endsection
