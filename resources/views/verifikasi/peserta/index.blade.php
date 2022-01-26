@@ -42,7 +42,7 @@
                                     <th>Kode Kegiatan</th>
                                     <th>NISN</th>
                                     <th>Nama</th>
-                                    <th>TGL. Daftar</th>
+                                    <th>TGL Daftar</th>
                                     <th>Status</th>
                                     <th>Option</th>
                                 </tr>

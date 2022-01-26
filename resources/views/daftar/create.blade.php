@@ -25,17 +25,10 @@
                             </div>
                         </div>
                         <div>
-                            @if ($activity->status == 'Aktif')
                             <h4 class="text-success">{{$activity->status}}</h4>
-                            @else
-                                <h4 class="text-muted">{{$activity->status}}</h4>
-                            @endif
                             
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
             @auth()
