@@ -27,9 +27,7 @@
                         <h6>Jl. Yon Armed 7 No.143, RT.003/RW.006, Cikiwul, Bantargebang, Kota Bks, Jawa Barat 17152</h6>
                     </div>
                 </div>
-                {{-- buat index --}}
-               
-                {{-- Penutup untuk index.blade.php --}}
+                
                 @yield('content')
             </main>
         </div>

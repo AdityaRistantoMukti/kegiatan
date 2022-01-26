@@ -7,6 +7,10 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
+body {
+    background-color: rgb(247, 248, 253);
+    opacity: 1;
+}
 .navbar-laravel {
     background-image: linear-gradient(to right, #159957, #155799);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
@@ -27,6 +31,13 @@
 
 .nav-link {
     color: white;
+}
+
+.hover {
+    transition: all 0.2s ease-in-out;
+}
+.hover:hover {
+    transform: scale(1.1);
 }
 
 @media (min-width: 400px) {

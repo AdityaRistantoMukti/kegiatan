@@ -47,7 +47,7 @@
                                     <div class="form-group">
                                         <label for="">Status</label>
                                         <select name="status" id="" class="form-control">
-                                            <option value="{{$kegiatan->id}}">{{$kegiatan->status}}</option>
+                                            <option value="">Pilih Status</option>
                                             <option value="Aktif">Aktif</option>
                                             <option value="Non-Aktif">Non-Aktif</option>
                                         </select>
