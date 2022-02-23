@@ -21,7 +21,7 @@
                                     <h6>Start {{$activity->tgl_awal}} - {{$activity->tgl_selesai}}</h6>
                                     <h6>{{$activity->jumlah_peserta}} -Seat </h6>
                                     <h6>IDR {{number_format($activity->idr,2)}}</h6>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                         <div>

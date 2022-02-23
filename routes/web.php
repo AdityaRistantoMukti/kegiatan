@@ -18,6 +18,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+route::get('resoult/{register}','ResoultController@show')->name('resoult');
+
+
 Route::group(['prefix' => 'kegiatan'], function(){
     Route::get('/tampilkan', 'KegiatanController@show')->name('kegiatan.tampilkan');
     Route::get('/create/{kegiatan}', 'KegiatanController@create')->name('kegiatan.create');

@@ -22,7 +22,7 @@ class VerifiedController extends Controller
     {
         $sertifikat = Register::findOrFail($id);
 
-        $pdf = PDF::loadView('cetak.sertifikat', compact('sertifikat'))->setPaper('a4', 'landscape');
+        $pdf = PDF::loadView('cetak.sertifikatt', compact('sertifikat'))->setPaper('a4', 'landscape');
 
         return $pdf->stream('sertifikat.pdf');
     }

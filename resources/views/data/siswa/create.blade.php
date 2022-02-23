@@ -33,12 +33,6 @@
                                     <input type="text" name="email" class="form-control" id="" placeholder="Silahkan isi Email siswa">
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="">Phone</label>
-                                    <input type="number" name="phone" class="form-control" id="" placeholder="Silahkan isi Nomer siswa">
-                                </div>
-                            </div>
                                 <div class="col-md-6">
                                    <div class="form-group">
                                        <label for="">Jenis Kelamin</label>
@@ -109,13 +103,13 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">Phone</label>
-                                        <input type="text" name="phone" class="form-control" id="" value="+62">
+                                        <input type="text" name="phone" class="form-control" id="">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                     <label for="">Password</label>
-                                    <input type="password" name="password" class="form-control" id="" value="*********">
+                                    <input type="password" name="password" class="form-control" id="">
                                 </div>
                             </div>
                                 <div class="col-md-12">
