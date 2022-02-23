@@ -7,8 +7,8 @@
                 <div class="card border-0">
                     <div class="card-body">
                         <div class="mb-3">
-                            <a href="{{route('manage-kegiatan.add-form')}}" class="btn btn-success">Tambah Kegiatan</a>
-                            <a href="{{route('cetak.semua-data.activity')}}" class="btn btn-success">Cetak semua data</a>
+                            <a href="{{route('manage-kegiatan.add-form')}}" class="btn btn-success mr-2">Tambah Kegiatan</a>
+                            <a href="{{route('cetak.semua-data.activity')}}" class="btn btn-outline-secondary">Cetak semua data</a>
                         </div>
 
                         <form action="{{route('cetak.activity')}}" method="get">
@@ -55,14 +55,14 @@
                                                 <td>{{$activity->nama_activity}}</td>
                                                 <td>{{$activity->idr}}</td>
                                                 <td>{{$activity->status}}</td> 
-                                                <td>{{$activity->created_at->format('Y-m-d')}}</td> 
+                                                <td>{{$activity->created_at->format('m-d-Y')}}</td> 
                                                 
                                             <td>
                                                 <form action="{{route('destroy.data.activity', $activity->id) }}" method="post">
                                                     @csrf
                                                     @method('DELETE')
                                                 <a href="{{route('manage-kegiatan.add-form.edit-kegiatan', $activity->id)}}" class="btn btn-primary btn-sm">Edit</a>
-                                                <button type="submit" class=" btn btn-danger btn-sm">Hapus</button>
+                                                <button type="submit" class=" btn btn-danger btn-sm">Delete</button>
                                             </form>
                                                
                                             </td>

@@ -27,17 +27,19 @@ class PaymentController extends Controller
         if ($verifikasi->save()) {
             $get = Register::findOrFail($verifikasi->register_id);
             
-            $activity = Activity::findOrFail($get->activity_id);
-
-            $hitung = $activity->jumlah_peserta - $get->qty;
             $get->update ([
                 'status'  => 'terverifikasi'
             ]);
+        }
+        if ($verifikasi->save()) {
+            $activity = Activity::findOrFail($get->activity_id);
+
+            $hitung = $activity->jumlah_peserta - $get->qty;
+            
             $activity->update ([
                 'jumlah_peserta' => $hitung
             ]);
         }
-
         return redirect()->back();
     }
 

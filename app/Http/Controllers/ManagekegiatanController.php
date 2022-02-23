@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Intervention\Image\Facades\Image;
 use Illuminate\Http\Request;
 use App\Activity;
+
 class ManagekegiatanController extends Controller
 {
     public function index()
@@ -65,6 +66,15 @@ class ManagekegiatanController extends Controller
             $image->save();
         }
     }
+    
+        public function update(Request $request, Activity $activity)
+        {
+            $activity->update($request->all());
+    
+            $this->storeImage($activity);
+    
+            return redirect()->back();
+        }
 
     public function destroy(Request $request, $id)
     {
@@ -76,15 +86,6 @@ class ManagekegiatanController extends Controller
             \File::delete(public_path('storage/' . $activity->image));
         }
        
-        return redirect()->back();
-    }
-
-    public function update(Request $request, Activity $activity)
-    {
-        $activity->update($request->all());
-
-        $this->storeImage($activity);
-
         return redirect()->back();
     }
 }

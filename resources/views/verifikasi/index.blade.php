@@ -49,7 +49,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($verifikasiPembayarans as $pembayaran)
+                                    @forelse ($verifikasiPembayarans as $pembayaran)
                                     <tr>
                                         <td>{{$pembayaran->activity->kode_activity}}</td>
                                         <td>NISN Belum terisi</td>
@@ -60,7 +60,13 @@
                                                 {{$pembayaran->status}}</td>
                                             </span>
                                     </tr>  
-                                    @endforeach
+                                    @empty 
+                                    <tr>
+                                        <td>
+                                            <td colspan="8" class="">Data Kosong </td>
+                                        </td>
+                                    </tr>
+                                    @endforelse
                                 </tbody>
                             </table>
                             {{$verifikasiPembayarans->links()}}

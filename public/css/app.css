@@ -10977,6 +10977,10 @@ body {
   transform: scale(1.1);
 }
 
+#check-readmore:checked ~ label {
+  content: "Read less";
+}
+
 @media (min-width: 400px) {
   .jumbotron {
     height: 200px;
